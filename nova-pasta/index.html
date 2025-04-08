@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Tocar Música" id="botaoMusica">
+    <audio id="musica" src="youtube_DiJcJiWiwyQ_audio.mp3"></audio>
+    <script>
+        const botao = document.getElementById('botaoMusica');
+        const audio = document.getElementById('musica');       
+            botao.onclick = function() {
+                audio.play();
+            }       
+            audio.onended = function() {
+                window.close();
+            }
+    </script>
+</body>
+</html>

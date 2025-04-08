@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site close</title>
+</head>
+<body>
+    <div>
+        <p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </p>
+    </div>
+    <script>
+        function verificar() {
+            const novaAba = window.open("nova-pasta/index.html", "_blank");
+            if (!novaAba) {
+                alert("Por favor, permita pop-ups para este site.")
+            } 
+        }
+    </script>
+</body>
+</html>
